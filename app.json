@@ -1,0 +1,12 @@
+{
+  "name": "Family Recipe Legacy",
+  "description": "Nostalgic American food blog — traditional recipes, baking, and kitchen stories.",
+  "repository": "https://github.com/yourname/family-recipe-legacy",
+  "keywords": ["recipes", "food blog", "react", "vite"],
+  "scripts": {
+    "postdeploy": "npm run build"
+  },
+  "env": {
+    "NODE_ENV": { "value": "production" }
+  }
+}

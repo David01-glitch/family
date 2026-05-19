@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #FBF5EC;
+  color: #4A2A14;
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4 { font-family: 'Fraunces', serif; }
+
+.btn {
+  @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full font-medium transition-colors duration-200;
+}
+.btn-primary { @apply bg-vintage text-cream hover:bg-brown-dark; }
+.btn-ghost { @apply bg-cream2 text-brown-dark hover:bg-gold/40; }
+.card { @apply bg-white rounded-2xl shadow-soft overflow-hidden; }
+.container-x { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.section { @apply py-16 sm:py-20; }
+.heading { @apply text-3xl sm:text-4xl md:text-5xl font-semibold text-brown-dark; }
+.subheading { @apply text-lg text-brown/80 max-w-2xl; }
+
+.expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 350ms ease;
+}
+.expandable.open { grid-template-rows: 1fr; }
+.expandable > div { overflow: hidden; }
